@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Outfit:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Minimax Light Theme */
+    --background: 0 0% 100%; /* #ffffff */
+    --foreground: 0 0% 13%; /* #222222 */
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+
+    --primary: 222 89% 51%; /* #1456f0 -> HSL */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 94%; /* #f0f0f0 */
+    --secondary-foreground: 0 0% 20%; /* #333333 */
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 213 15% 32%; /* #45515e */
+
+    --accent: 323 75% 64%; /* #ea5ec1 */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 91%; /* #e5e7eb */
+    --input: 220 13% 91%;
+    --ring: 222 89% 51%;
+
+    --radius: 0.5rem; /* 8px default */
+  }
+
+  .dark {
+    /* Minimax Dark Theme */
+    --background: 212 21% 12%; /* #181e25 */
+    --foreground: 0 0% 100%; /* #ffffff */
+
+    --card: 212 21% 15%; /* darker surface */
+    --card-foreground: 0 0% 100%;
+
+    --popover: 212 21% 15%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 222 89% 51%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 212 21% 18%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 212 21% 18%;
+    --muted-foreground: 213 15% 65%; /* #8e8e93 */
+
+    --accent: 323 75% 64%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 212 21% 25%;
+    --input: 212 21% 25%;
+    --ring: 222 89% 51%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
